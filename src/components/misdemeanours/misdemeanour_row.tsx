@@ -8,11 +8,13 @@ const MisdemeanourRow: React.FC = () => {
     <>
       {misdemeanours.map((misdemeanourEntry, index) => {
         return (
-          <tr key={index}>
-            <td>{misdemeanourEntry.citizenId}</td>
-            <td>{misdemeanourEntry.date}</td>
-            <td>{misdemeanourText[misdemeanourEntry.misdemeanour]}</td>
-            <td></td>
+          <tr key={index} className="table__row">
+            <td className="table__cell">{misdemeanourEntry.citizenId}</td>
+            <td className="table__cell">{misdemeanourEntry.date}</td>
+            <td className="table__cell">
+              {misdemeanourText[misdemeanourEntry.misdemeanour]}
+            </td>
+            <td className="table__cell"></td>
           </tr>
         );
       })}

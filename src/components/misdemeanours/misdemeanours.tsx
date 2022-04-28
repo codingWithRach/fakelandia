@@ -1,11 +1,12 @@
-import MisdemeanourHeading from "../misdemeanour_heading/misdemeanour_heading";
-import MisdemeanourRows from "../misdemeanour_row/misdemeanour_row";
+import MisdemeanourHeading from "./misdemeanour_heading";
+import MisdemeanourRows from "./misdemeanour_row";
+import "./misdemeanours.css";
 
 const Misdemeanours: React.FC = () => {
   return (
     <>
       <h1>Misdemeanours</h1>
-      <table>
+      <table className="table">
         <MisdemeanourHeading />
         <MisdemeanourRows />
       </table>

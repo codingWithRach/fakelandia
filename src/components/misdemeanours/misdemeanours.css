@@ -1,0 +1,13 @@
+.table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.table__row {
+  border: 1px solid;
+}
+
+.table__cell {
+  border: 1px solid;
+  padding: 0.5rem 1rem;
+}
