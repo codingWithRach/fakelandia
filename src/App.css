@@ -6,3 +6,9 @@
 .pageHeading {
   text-align: center;
 }
+
+@media screen and (max-width: 550px) {
+  .pageHeading {
+    font-size: 1.5rem;
+  }
+}
