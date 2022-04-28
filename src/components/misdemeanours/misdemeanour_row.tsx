@@ -14,7 +14,12 @@ const MisdemeanourRow: React.FC = () => {
             <td className="table__cell">
               {misdemeanourText[misdemeanourEntry.misdemeanour]}
             </td>
-            <td className="table__cell"></td>
+            <td className="table__cell">
+              <img
+                alt={`Punishment for ${misdemeanourEntry.misdemeanour}`}
+                src={`https://picsum.photos/130/65?random=${misdemeanourEntry.citizenId}`}
+              />
+            </td>
           </tr>
         );
       })}
