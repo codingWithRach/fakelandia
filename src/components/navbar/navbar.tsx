@@ -10,17 +10,35 @@ const NavBar: React.FC = () => {
             FAKELANDIA JUSTICE DEPARTMENT
           </li>
           <li className="navbar__item">
-            <NavLink className="navbar__link" to="/">
+            <NavLink
+              className="navbar__link"
+              to="/"
+              style={({ isActive }) =>
+                isActive ? { color: "#232222" } : { color: "#fff" }
+              }
+            >
               Home
             </NavLink>
           </li>
           <li className="navbar__item">
-            <NavLink className="navbar__link" to="/misdemeanours">
+            <NavLink
+              className="navbar__link"
+              to="/misdemeanours"
+              style={({ isActive }) =>
+                isActive ? { color: "#232222" } : { color: "#fff" }
+              }
+            >
               Misdemeanours
             </NavLink>
           </li>
           <li className="navbar__item">
-            <NavLink className="navbar__link" to="/confession">
+            <NavLink
+              className="navbar__link"
+              to="/confession"
+              style={({ isActive }) =>
+                isActive ? { color: "#232222" } : { color: "#fff" }
+              }
+            >
               Confess To Us
             </NavLink>
           </li>
