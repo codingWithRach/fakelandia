@@ -5,7 +5,7 @@ import "./misdemeanours.css";
 const Misdemeanours: React.FC = () => {
   return (
     <>
-      <h1>Misdemeanours</h1>
+      <h1 className="pageHeading">Misdemeanours</h1>
       <table className="table">
         <MisdemeanourHeading />
         <MisdemeanourRows />

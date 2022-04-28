@@ -2,3 +2,7 @@
   --medium-grey: #bbbbbb;
   --dark-grey: #484646;
 }
+
+.pageHeading {
+  text-align: center;
+}

@@ -16,6 +16,7 @@ const MisdemeanourRow: React.FC = () => {
             </td>
             <td className="table__cell">
               <img
+                className="table__image"
                 alt={`Punishment for ${misdemeanourEntry.misdemeanour}`}
                 src={`https://picsum.photos/130/65?random=${misdemeanourEntry.citizenId}`}
               />

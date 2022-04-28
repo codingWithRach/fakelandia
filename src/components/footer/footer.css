@@ -12,3 +12,9 @@
 .footer__spacing {
   padding: 1rem;
 }
+
+@media screen and (max-width: 450px) {
+  .footer {
+    font-size: 0.75rem;
+  }
+}

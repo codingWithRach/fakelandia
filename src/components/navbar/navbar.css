@@ -13,7 +13,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 0.75rem;
+  padding: 0.75rem 2rem;
   text-decoration: none;
   font-size: 0.75rem;
   width: 5rem;
@@ -32,10 +32,20 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 1.5rem 0.75rem;
+  padding: 1.5rem 2rem;
   text-decoration: none;
 }
 
 .navbar__link:hover {
   background-color: var(--dark-grey);
+}
+
+@media screen and (max-width: 550px) {
+  .navbar__title {
+    padding: 0.75rem;
+  }
+  .navbar__link {
+    padding: 1.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
 }
