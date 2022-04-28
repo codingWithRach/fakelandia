@@ -1,9 +1,9 @@
-import Nav from "../nav/nav";
+import NavBar from "../navbar/navbar";
 
 const Header: React.FC = () => {
   return (
     <>
-      <Nav />
+      <NavBar />
     </>
   );
 };

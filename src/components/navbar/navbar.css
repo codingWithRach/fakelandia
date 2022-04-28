@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-charcoal);
+  width: 100%;
+  position: static;
+  top: 0;
+}
+
+.navbar__title {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 0.75rem;
+  width: 5rem;
+}
+
+.navbar__item {
+  float: left;
+  border-right: 0.05rem solid var(--medium-grey);
+}
+
+.navbar__item:last-child {
+  border-right: none;
+}
+
+.navbar__link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0.75rem;
+  text-decoration: none;
+}
+
+.navbar__link:hover {
+  background-color: var(--dark-grey);
+}
