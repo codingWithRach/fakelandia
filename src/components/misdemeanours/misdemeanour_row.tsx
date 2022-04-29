@@ -1,12 +1,22 @@
+import { useFilterOption } from "../../context/FilterContext";
 import { useMisdemeanours } from "../../context/MisdemeanoursContext";
 import { misdemeanourText } from "../../data/misdemeanours";
 import { MisdemeanourEntry } from "../../data/misdemeanour_entry";
 
 const MisdemeanourRow: React.FC = () => {
   const misdemeanours: Array<MisdemeanourEntry> = useMisdemeanours();
+  const filterOption: string = useFilterOption();
+
+  let misdemeanoursToDisplay = [...misdemeanours];
+  if (filterOption !== "all") {
+    misdemeanoursToDisplay = misdemeanours.filter(
+      (misdemeanourEntry) => misdemeanourEntry.misdemeanour === filterOption
+    );
+  }
+
   return (
     <>
-      {misdemeanours.map((misdemeanourEntry, index) => {
+      {misdemeanoursToDisplay.map((misdemeanourEntry, index) => {
         return (
           <tr key={index} className="table__row">
             <td className="table__cell">{misdemeanourEntry.citizenId}</td>
