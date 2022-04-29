@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import LoadingIndicator from "../components/shared/loading_indicator/loading_indicator";
 import generateMisdemeanours from "../data/generate_misdemeanours";
 import { MisdemeanourEntry } from "../data/misdemeanour_entry";
 
@@ -24,14 +25,21 @@ const MisdemeanoursProvider: React.FC<Props> = ({ children }) => {
   const [misdemeanours, setMisdemeanours] = useState<Array<MisdemeanourEntry>>(
     []
   );
+  const [loading, setLoading] = useState(false);
+  const shouldLoad = misdemeanours.length === 0 && !loading;
 
   useEffect(() => {
     async function getMisdemeanours() {
+      if (loading) return;
+      setLoading(true);
       const response = await generateMisdemeanours(5);
       setMisdemeanours(response);
+      setLoading(false);
     }
-    getMisdemeanours();
-  }, []);
+    if (shouldLoad) {
+      getMisdemeanours();
+    }
+  }, [shouldLoad, loading]);
 
   function updateMisdemeanours(newMisdemeanourEntry: MisdemeanourEntry) {
     setMisdemeanours([...misdemeanours, newMisdemeanourEntry]);
@@ -40,7 +48,8 @@ const MisdemeanoursProvider: React.FC<Props> = ({ children }) => {
   return (
     <MisdemeanoursContext.Provider value={misdemeanours}>
       <MisdemeanoursUpdateContext.Provider value={updateMisdemeanours}>
-        {children}
+        {loading && <LoadingIndicator />}
+        {!loading && children}
       </MisdemeanoursUpdateContext.Provider>
     </MisdemeanoursContext.Provider>
   );
