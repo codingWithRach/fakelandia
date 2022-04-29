@@ -17,6 +17,14 @@ const Home: React.FC = () => {
       <div className="pageText">
         Number of misdemeanours currently reported: {misdemeanours.length}
       </div>
+      <div className="pageText">
+        Of these,{" "}
+        {
+          misdemeanours.filter((misdemeanour) => misdemeanour.selfConfessed)
+            .length
+        }{" "}
+        are self-confessed misdemeanours
+      </div>
     </>
   );
 };
