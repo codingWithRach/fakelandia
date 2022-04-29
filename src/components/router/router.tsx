@@ -4,7 +4,7 @@ import Confession from "../confession/confession";
 import Home from "../home/home";
 import MainLayout from "../main_layout/main_layout";
 import Misdemeanours from "../misdemeanours/misdemeanours";
-import NotFound from "../not_found/not_found";
+import NotFound from "../shared/not_found/not_found";
 
 const Router: React.FC = () => {
   return (
