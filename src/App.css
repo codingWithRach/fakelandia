@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.pageText {
+  margin: 0.5rem 5rem;
+}
+
 @media screen and (max-width: 550px) {
   .pageHeading {
     font-size: 1.5rem;
