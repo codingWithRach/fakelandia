@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useFilterOptionUpdate } from "../../context/FilterContext";
 import { misdemeanourText } from "../../data/misdemeanours";
 import Label from "../footer/label/label";
 import Select from "../select/select";
 import "./filter.css";
 
 const Filter: React.FC = () => {
-  const [filterOption, setFilterOption] = useState<string>("all");
+  const filterOptionUpdate = useFilterOptionUpdate();
   return (
     <div className="filter">
       <Label forID="filter" labelText="Filter by misdemeanour" />
       <Select
         id="filter"
         values={misdemeanourText}
-        onChangeHandler={(event) => setFilterOption(event.target.value)}
+        onChangeHandler={(event) => filterOptionUpdate(event.target.value)}
       />
     </div>
   );
