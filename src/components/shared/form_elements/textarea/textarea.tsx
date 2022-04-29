@@ -1,3 +1,5 @@
+import "./textarea.css";
+
 interface TextAreaProps {
   id: string;
   value: string;
@@ -8,6 +10,7 @@ const TextArea: React.FC<TextAreaProps> = ({ id, value, onChangeHandler }) => {
   return (
     <>
       <textarea
+        className="textarea"
         id={id}
         value={value}
         rows={4}

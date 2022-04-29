@@ -1,11 +1,15 @@
-.confessionForm {
+.confessionDisplay {
   display: block;
-  text-align: right;
+  text-align: center;
+}
+
+.confessionForm {
+  display: inline-block;
   margin: 2rem auto;
-  width: 50%;
 }
 
 .confessionForm__element {
+  text-align: right;
   margin: 0.5rem 2rem;
 }
 

@@ -44,12 +44,14 @@ const ConfessionForm: React.FC = () => {
   };
 
   return (
-    <form className="confessionForm" onSubmit={saveConfession}>
-      <Subject />
-      <ReasonForContact />
-      <ConfessionText />
-      <ConfessButton />
-    </form>
+    <div className="confessionDisplay">
+      <form className="confessionForm" onSubmit={saveConfession}>
+        <Subject />
+        <ReasonForContact />
+        <ConfessionText />
+        <ConfessButton />
+      </form>
+    </div>
   );
 };
 

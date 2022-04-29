@@ -4,7 +4,7 @@ import {
   useConfession,
   useConfessionUpdate,
 } from "../../context/ConfessionContext";
-import TextArea from "../shared/form_elements/textarea";
+import TextArea from "../shared/form_elements/textarea/textarea";
 
 const ConfessionText: React.FC = () => {
   const confession = useConfession();
