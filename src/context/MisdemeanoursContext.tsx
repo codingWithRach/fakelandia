@@ -31,7 +31,6 @@ const MisdemeanoursProvider: React.FC<Props> = ({ children }) => {
   useEffect(() => {
     async function getMisdemeanours() {
       if (loading) return;
-      console.log("LOADING");
       setLoading(true);
       const response = await generateMisdemeanours(5);
       setMisdemeanours(response);
