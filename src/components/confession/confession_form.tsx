@@ -37,6 +37,8 @@ const ConfessionForm: React.FC = () => {
         citizenId: getCitizenId(),
         date: new Date().toLocaleDateString(),
         misdemeanour: newConfession.reasonForContact as Misdemeanour,
+        description: newConfession.confession,
+        selfConfessed: true,
       };
       updateMisdemeanours(misdemeanourEntry);
     }

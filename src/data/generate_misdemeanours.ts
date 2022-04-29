@@ -16,6 +16,8 @@ export default async function generateMisdemeanours(
       citizenId: Math.floor(i + rand(37) * rand(967)),
       date: new Date().toLocaleDateString(),
       misdemeanour: choose<Misdemeanour>([...Misdemeanours]),
+      description: "Details unknown",
+      selfConfessed: false,
     });
   }
 

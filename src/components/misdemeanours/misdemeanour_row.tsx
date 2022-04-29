@@ -17,13 +17,18 @@ const MisdemeanourRow: React.FC = () => {
   return (
     <>
       {misdemeanoursToDisplay.map((misdemeanourEntry, index) => {
+        let rowClass = "table__row";
+        if (misdemeanourEntry.selfConfessed) {
+          rowClass += " table__row--selfconfessed";
+        }
         return (
-          <tr key={index} className="table__row">
+          <tr key={index} className={rowClass}>
             <td className="table__cell">{misdemeanourEntry.citizenId}</td>
             <td className="table__cell">{misdemeanourEntry.date}</td>
             <td className="table__cell">
               {misdemeanourText[misdemeanourEntry.misdemeanour]}
             </td>
+            <td className="table__cell">{misdemeanourEntry.description}</td>
             <td className="table__cell">
               <img
                 className="table__image"

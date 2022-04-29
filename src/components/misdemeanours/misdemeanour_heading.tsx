@@ -5,6 +5,7 @@ const MisdemeanourHeading: React.FC = () => {
         <td className="table__cell">Citizen ID</td>
         <td className="table__cell">Date</td>
         <td className="table__cell">Misdemeanour</td>
+        <td className="table__cell">Description</td>
         <td className="table__cell">Punishment idea</td>
       </tr>
     </>
