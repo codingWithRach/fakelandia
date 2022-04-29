@@ -1,10 +1,8 @@
 import ConfessionProvider from "../../context/ConfessionContext";
-import ReasonForContact from "./reason_for_contact";
-import Subject from "./subject";
 import "./confession.css";
-import ConfessionText from "./confession_text";
-import ConfessButton from "./confess_button";
 import DisabledProvider from "../../context/DisabledContext";
+import React from "react";
+import ConfessionForm from "./confession_form";
 
 const Confession: React.FC = () => {
   return (
@@ -20,12 +18,7 @@ const Confession: React.FC = () => {
       </div>
       <DisabledProvider>
         <ConfessionProvider>
-          <form className="confessionForm">
-            <Subject />
-            <ReasonForContact />
-            <ConfessionText />
-            <ConfessButton />
-          </form>
+          <ConfessionForm />
         </ConfessionProvider>
       </DisabledProvider>
     </>

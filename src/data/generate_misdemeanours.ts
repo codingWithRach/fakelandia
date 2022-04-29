@@ -1,14 +1,6 @@
 import { MisdemeanourEntry } from "./misdemeanour_entry";
 import { Misdemeanour, Misdemeanours } from "./misdemeanours";
 
-// export const Misdemeanours = [
-//   "rudeness",
-//   "vegetables",
-//   "lift",
-//   "united",
-// ] as const;
-// export type Misdemeanour = typeof Misdemeanours[number];
-
 export default async function generateMisdemeanours(
   number: number
 ): Promise<Array<MisdemeanourEntry>> {

@@ -1,0 +1,56 @@
+import React from "react";
+import {
+  defaultConfession,
+  IConfessionContext,
+  useConfession,
+  useConfessionUpdate,
+} from "../../context/ConfessionContext";
+import { useMisdemeanoursUpdate } from "../../context/MisdemeanoursContext";
+import { Misdemeanour } from "../../data/misdemeanours";
+import { MisdemeanourEntry } from "../../data/misdemeanour_entry";
+import ConfessionText from "./confession_text";
+import ConfessButton from "./confess_button";
+import ReasonForContact from "./reason_for_contact";
+import Subject from "./subject";
+
+const ConfessionForm: React.FC = () => {
+  const newConfession: IConfessionContext = useConfession();
+  const updateConfession = useConfessionUpdate();
+  const updateMisdemeanours = useMisdemeanoursUpdate();
+
+  const getCitizenId = (): number => {
+    const rand = (x: number): number => Math.random() * x;
+    return Math.floor(42 + rand(37) * rand(967));
+  };
+
+  const saveConfession = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // if confessor needs to talk, log confession text to console
+    if (newConfession.reasonForContact === "all") {
+      console.log(
+        `A citizen has just vented the following: ${newConfession.subject} - ${newConfession.confession}`
+      );
+    }
+    // otherwise, add confession to list of misdemeanours
+    else {
+      const misdemeanourEntry: MisdemeanourEntry = {
+        citizenId: getCitizenId(),
+        date: new Date().toLocaleDateString(),
+        misdemeanour: newConfession.reasonForContact as Misdemeanour,
+      };
+      updateMisdemeanours(misdemeanourEntry);
+    }
+    updateConfession(defaultConfession);
+  };
+
+  return (
+    <form className="confessionForm" onSubmit={saveConfession}>
+      <Subject />
+      <ReasonForContact />
+      <ConfessionText />
+      <ConfessButton />
+    </form>
+  );
+};
+
+export default ConfessionForm;

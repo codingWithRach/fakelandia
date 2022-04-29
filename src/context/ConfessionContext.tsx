@@ -8,9 +8,9 @@ export interface IConfessionContext {
   confession: string;
 }
 
-const defaultConfession: IConfessionContext = {
+export const defaultConfession: IConfessionContext = {
   subject: "",
-  reasonForContact: "",
+  reasonForContact: "select",
   confession: "",
 };
 const ConfessionContext =

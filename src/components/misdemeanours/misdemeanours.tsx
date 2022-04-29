@@ -11,8 +11,10 @@ const Misdemeanours: React.FC = () => {
       <FilterProvider>
         <Filter />
         <table className="table">
-          <MisdemeanourHeading />
-          <MisdemeanourRows />
+          <tbody>
+            <MisdemeanourHeading />
+            <MisdemeanourRows />
+          </tbody>
         </table>
       </FilterProvider>
     </>
