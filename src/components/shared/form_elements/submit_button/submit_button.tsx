@@ -1,4 +1,4 @@
-import { useDisabled } from "../../../context/DisabledContext";
+import { useDisabled } from "../../../../context/DisabledContext";
 
 interface SubmitButtonProps {
   labelText: string;

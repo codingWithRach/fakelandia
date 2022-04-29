@@ -4,8 +4,8 @@ import {
   useConfessionUpdate,
 } from "../../context/ConfessionContext";
 import { misdemeanourText } from "../../data/misdemeanours";
-import Label from "../footer/label/label";
-import Select from "../form_elements/select/select";
+import Label from "../shared/form_elements/label/label";
+import Select from "../shared/form_elements/select/select";
 
 const ReasonForContact: React.FC = () => {
   const confession = useConfession();

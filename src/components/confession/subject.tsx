@@ -4,8 +4,8 @@ import {
   useConfession,
   useConfessionUpdate,
 } from "../../context/ConfessionContext";
-import Label from "../footer/label/label";
-import TextInput from "../form_elements/text_input/text_input";
+import Label from "../shared/form_elements/label/label";
+import TextInput from "../shared/form_elements/text_input/text_input";
 
 const Subject: React.FC = () => {
   const confession = useConfession();

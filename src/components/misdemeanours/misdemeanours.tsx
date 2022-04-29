@@ -1,7 +1,7 @@
 import MisdemeanourHeading from "./misdemeanour_heading";
 import MisdemeanourRows from "./misdemeanour_row";
 import "./misdemeanours.css";
-import Filter from "../filter/filter";
+import Filter from "./filter/filter";
 import FilterProvider from "../../context/FilterContext";
 
 const Misdemeanours: React.FC = () => {
