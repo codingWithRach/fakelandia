@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.subHeading {
+  margin: 2rem 5rem auto 5rem;
+}
+
 .pageText {
   margin: 0.5rem 5rem;
 }
