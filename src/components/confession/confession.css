@@ -1,0 +1,14 @@
+.confessionForm {
+  display: block;
+  text-align: right;
+  margin: 2rem auto;
+  width: 50%;
+}
+
+.confessionForm__element {
+  margin: 0.5rem 2rem;
+}
+
+.confessionForm__button {
+  text-align: center;
+}

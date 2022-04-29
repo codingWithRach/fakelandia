@@ -1,7 +1,7 @@
 import { useFilterOptionUpdate } from "../../context/FilterContext";
 import { misdemeanourText } from "../../data/misdemeanours";
 import Label from "../footer/label/label";
-import Select from "../select/select";
+import Select from "../form_elements/select/select";
 import "./filter.css";
 
 const Filter: React.FC = () => {
