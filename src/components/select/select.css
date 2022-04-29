@@ -1,9 +1,5 @@
-.label {
-  margin-right: 0.5rem;
-}
-
 @media screen and (max-width: 550px) {
-  .label {
+  .select {
     font-size: 0.75rem;
   }
 }
