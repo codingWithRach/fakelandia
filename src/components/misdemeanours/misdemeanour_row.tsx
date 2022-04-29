@@ -13,6 +13,7 @@ const MisdemeanourRow: React.FC = () => {
       (misdemeanourEntry) => misdemeanourEntry.misdemeanour === filterOption
     );
   }
+  misdemeanoursToDisplay.sort((a, b) => a.citizenId - b.citizenId);
 
   return (
     <>
