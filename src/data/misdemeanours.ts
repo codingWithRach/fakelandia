@@ -7,7 +7,7 @@ export const Misdemeanours = [
 export type Misdemeanour = typeof Misdemeanours[number];
 
 export const misdemeanourText = {
-  all: "all",
+  all: "All",
   rudeness: "Mild Public Rudeness = 🤪",
   lift: "Speaking in a Lift = 🗣",
   vegetables: "Not Eating Your Vegetables = 🥗",
