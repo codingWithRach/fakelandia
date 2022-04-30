@@ -1,7 +1,7 @@
 {
-  "name": "lm-code-intro-react-router-fakelandia",
+  "name": "fakelandia",
   "version": "0.1.0",
-  "homepage": "https://codingwithrach.github.io/lm-code-intro-react-router-fakelandia/",
+  "homepage": "https://codingwithrach.github.io/fakelandia/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
