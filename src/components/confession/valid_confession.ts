@@ -1,4 +1,4 @@
-import { IConfessionContext } from "../../context/ConfessionContext";
+import { IConfessionContext } from "../../context/confession_context";
 
 export const validConfession = (confession: IConfessionContext): boolean => {
   return (

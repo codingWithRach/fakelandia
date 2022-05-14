@@ -3,7 +3,7 @@ import {
   IConfessionContext,
   useConfession,
   useConfessionUpdate,
-} from "../../context/ConfessionContext";
+} from "../../context/confession_context";
 import Label from "../shared/form_elements/label/label";
 import TextInput from "../shared/form_elements/text_input/text_input";
 

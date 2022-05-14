@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { validConfession } from "../components/confession/valid_confession";
-import { useDisabledUpdate } from "./DisabledContext";
+import { useDisabledUpdate } from "./disabled_context";
 
 export interface IConfessionContext {
   subject: string;

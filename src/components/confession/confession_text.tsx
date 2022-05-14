@@ -3,7 +3,7 @@ import {
   IConfessionContext,
   useConfession,
   useConfessionUpdate,
-} from "../../context/ConfessionContext";
+} from "../../context/confession_context";
 import TextArea from "../shared/form_elements/textarea/textarea";
 
 const ConfessionText: React.FC = () => {

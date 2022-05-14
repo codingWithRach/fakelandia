@@ -1,5 +1,5 @@
-import { useFilterOption } from "../../context/FilterContext";
-import { useMisdemeanours } from "../../context/MisdemeanoursContext";
+import { useFilterOption } from "../../context/filter_context";
+import { useMisdemeanours } from "../../context/misdemeanours_context";
 import { misdemeanourText } from "../../data/misdemeanours";
 import { MisdemeanourEntry } from "../../data/misdemeanour_entry";
 

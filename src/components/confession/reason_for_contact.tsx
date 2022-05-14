@@ -2,7 +2,7 @@ import {
   IConfessionContext,
   useConfession,
   useConfessionUpdate,
-} from "../../context/ConfessionContext";
+} from "../../context/confession_context";
 import { misdemeanourText } from "../../data/misdemeanours";
 import Label from "../shared/form_elements/label/label";
 import Select from "../shared/form_elements/select/select";

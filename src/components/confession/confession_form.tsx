@@ -4,8 +4,8 @@ import {
   IConfessionContext,
   useConfession,
   useConfessionUpdate,
-} from "../../context/ConfessionContext";
-import { useMisdemeanoursUpdate } from "../../context/MisdemeanoursContext";
+} from "../../context/confession_context";
+import { useMisdemeanoursUpdate } from "../../context/misdemeanours_context";
 import { Misdemeanour } from "../../data/misdemeanours";
 import { MisdemeanourEntry } from "../../data/misdemeanour_entry";
 import ConfessionText from "./confession_text";

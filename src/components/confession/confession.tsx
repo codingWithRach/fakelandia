@@ -1,6 +1,6 @@
-import ConfessionProvider from "../../context/ConfessionContext";
+import ConfessionProvider from "../../context/confession_context";
 import "./confession.css";
-import DisabledProvider from "../../context/DisabledContext";
+import DisabledProvider from "../../context/disabled_context";
 import React from "react";
 import ConfessionForm from "./confession_form";
 

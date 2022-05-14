@@ -1,4 +1,4 @@
-import { useFilterOptionUpdate } from "../../../context/FilterContext";
+import { useFilterOptionUpdate } from "../../../context/filter_context";
 import { misdemeanourText } from "../../../data/misdemeanours";
 import Label from "../../shared/form_elements/label/label";
 import Select from "../../shared/form_elements/select/select";
