@@ -27,6 +27,7 @@ body {
 
 .content {
   flex: 1 0 auto;
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 550px) {
