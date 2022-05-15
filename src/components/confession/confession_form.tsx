@@ -12,6 +12,7 @@ import ConfessionText from "./confession_text";
 import ConfessButton from "./confess_button";
 import ReasonForContact from "./reason_for_contact";
 import Subject from "./subject";
+import Thankyou from "./thankyou";
 
 const ConfessionForm: React.FC = () => {
   const newConfession: IConfessionContext = useConfession();
@@ -52,6 +53,7 @@ const ConfessionForm: React.FC = () => {
         <ReasonForContact />
         <ConfessionText />
         <ConfessButton />
+        <Thankyou />
       </form>
     </div>
   );

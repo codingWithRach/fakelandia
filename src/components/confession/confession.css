@@ -16,3 +16,10 @@
 .confessionForm__button {
   text-align: center;
 }
+
+.confessionForm__thankyou {
+  text-align: center;
+  font-style: italic;
+  margin-top: 2rem;
+  color: blue;
+}
