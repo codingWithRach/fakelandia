@@ -1,46 +1,30 @@
-# Getting Started with Create React App
+# Justice for Fakelandia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+The faraway country of Fakelandia has decided to modernise their justice system with a fancy new technology: "websites".
 
-In the project directory, you can run:
+Fakelandia is a happy place with a low crime rate, but it's important to each citizen that justice is seen to be served, so they'd like a website to keep abreast of the latest justice developments - and they've specifically asked for YOU to help out.
 
-### `npm start`
+## Crimes and Misdemeanours
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The Fakelandians have asked for a site that lets them browse lists of crimes committed today, and also for functionality that helps citizens confess to their own crimes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+As a non-citizen, you might not be aware that there are only four possible crimes in Fakelandia:
 
-### `npm test`
+- Mild Public Rudeness
+- Speaking in a Lift
+- Not Eating Your Vegetables
+- Supporting Manchester United
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Despite the clear severity of some of these awful crimes, the Fakelandians refer to them all as "misdemeanours".
 
-### `npm run build`
+The Fakelandians have provided an API for you to call to get a list of misdemeanours.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Fakelandian system for getting random punishment inspiration is to use a service called Picsum, which can be accessed by putting a particular URL into an image tag.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Viewing the Results
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To see the misdemeanours that have been committed today, or to confess to your own crime, please visit
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+https://codingwithrach.github.io/fakelandia/
